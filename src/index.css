@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #f9fafb;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* FullCalendar custom styles */
+.fc {
+  --fc-border-color: #e5e7eb;
+  --fc-button-bg-color: #8b5cf6;
+  --fc-button-border-color: #8b5cf6;
+  --fc-button-hover-bg-color: #7c3aed;
+  --fc-button-hover-border-color: #7c3aed;
+  --fc-button-active-bg-color: #6d28d9;
+  --fc-button-active-border-color: #6d28d9;
+  --fc-today-bg-color: #f5f3ff;
+}
+
+.fc .fc-button {
+  font-weight: 500;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.fc-event {
+  cursor: pointer;
+  border: none;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
